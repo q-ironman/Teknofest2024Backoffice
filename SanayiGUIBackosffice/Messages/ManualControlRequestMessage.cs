@@ -2,7 +2,7 @@
 {
     public class ManualControlRequestMessage
     {
-        public string? Direction { get; set; }
+        public float Angle { get; set; }
 
     }
 }
