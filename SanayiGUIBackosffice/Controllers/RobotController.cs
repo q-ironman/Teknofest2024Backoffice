@@ -10,12 +10,6 @@ namespace SanayiGUIBackosffice.Controllers
     public class RobotController : ControllerBase
     {
         [HttpPost]
-        public List<Movement> StartCommand(StartCommandRequestMessage requestMessage)
-        {
-
-            return new List<Movement> { };
-        }
-        [HttpPost]
         public void CollectTelemetry(CollectTelemetryRequestMessage requestMessage)
         {
 
@@ -33,26 +27,6 @@ namespace SanayiGUIBackosffice.Controllers
         [HttpPost]
         public void CargoInfo(CargoInfoRequestMessage requestMessage)
         {
-
-        }
-        [HttpPost]
-        public void MakeEmergencyBrake()
-        {
-
-        }
-        [HttpPost]
-        public void EmptyTour()
-        {
-
-        }
-        [HttpPost]
-        public async Task ManualControl(ManualControlRequestMessage requestMessage)
-        {
-            var robotUrl = "http://192.168.1.1:80/api/ManualControl";
-            var client = new HttpClient();
-            var content = new StringContent(JsonSerializer.Serialize<ManualControlRequestMessage>(requestMessage), System.Text.Encoding.UTF8, "application/json");
-            var res = await client.PostAsync(robotUrl, content);
-
 
         }
         [HttpPost]
