@@ -8,7 +8,5 @@ namespace SanayiGUIBackosffice.Messages
         public CarTelemetry CarTelemetry { get; set; }
         public MotorTelemetry MotorTelemetry { get; set; }
         public HeatTelemetry HeatTelemetry { get; set; }
-
-
     }
 }

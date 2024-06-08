@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using SanayiGUIBackosffice.Messages;
 using SanayiGUIBackosffice.Model;
+using SanayiGUIWebApi.Messages;
 using System.Text.Json;
 
 namespace SanayiGUIWebApi.Controllers
@@ -24,18 +25,30 @@ namespace SanayiGUIWebApi.Controllers
         }
 
         [HttpGet]
-        public void EmptyTour()
+        public async Task EmptyTour()
         {
-
+            var robotUrl = "http://localhost:80/api/EmptyTour";
+            var client = new HttpClient();
+            var res = await client.GetAsync(robotUrl);
         }
 
         [HttpPost]
         public async Task ManualControl(ManualControlRequestMessage requestMessage)
         {
-            var robotUrl = "http://192.168.1.1:80/api/ManualControl";
+            var robotUrl = "http://localhost:80/api/ManualControl";
             var client = new HttpClient();
             var content = new StringContent(JsonSerializer.Serialize<ManualControlRequestMessage>(requestMessage), System.Text.Encoding.UTF8, "application/json");
             var res = await client.PostAsync(robotUrl, content);
         }
+
+        //[HttpPost]
+        //public async Task ManualControlV2(NewRequestMessage requestMessage)
+        //{
+        //    var robotUrl = "http://localhost:80/api/ManuelControlV2";
+        //    var client = new HttpClient();
+        //    var content = new StringContent(JsonSerializer.Serialize<NewRequestMessage>(requestMessage), System.Text.Encoding.UTF8, "application/json");
+        //    var res = await client.PostAsync(robotUrl, content);
+        //}
+
     }
 }
