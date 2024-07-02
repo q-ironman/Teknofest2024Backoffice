@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MapManager;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SanayiGUIBackosffice.Messages;
 using SanayiGUIBackosffice.Model;
@@ -11,11 +12,26 @@ namespace SanayiGUIWebApi.Controllers
     [ApiController]
     public class UiController : ControllerBase
     {
-        [HttpPost]
-        public List<Movement> StartCommand(StartCommandRequestMessage requestMessage)
+        private readonly RouteManager routeManager;
+        public UiController(RouteManager routeManager)
         {
-
-            return new List<Movement> { };
+            this.routeManager = routeManager;
+        }
+        [HttpPost]
+        public List<string> StartCommand(StartCommandRequestMessage requestMessage)
+        {
+            List<string> shortestPath = new();
+            var commandList = requestMessage.Command;
+            for (int i = 0; i < commandList.Count-1; i++)
+            {
+                var startLabel = commandList[i].Value;
+                var endLabel = commandList[i + 1].Value;
+                var pathPart = routeManager.GetShortestPath(startLabel, endLabel);
+                shortestPath.AddRange(pathPart);
+            }
+            return shortestPath;
+            //var res = shortestPath.ToHashSet().ToList();
+            //return res;
         }
 
         [HttpGet]

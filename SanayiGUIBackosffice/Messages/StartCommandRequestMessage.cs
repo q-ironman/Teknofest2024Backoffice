@@ -2,10 +2,13 @@
 {
     public class StartCommandRequestMessage
     {
-        public string? TourType { get; set; }
-        public string? StartPoint { get; set; }
-        public string? EndPoint { get; set;}
-        public string? RobotDirection { get; set; }
+        public string Direction { get; set; }
+        public List<Command> Command { get; set; }
+    }
 
+    public class Command
+    {
+        public string Label { get; set; }
+        public string Value { get; set; }
     }
 }

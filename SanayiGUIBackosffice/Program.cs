@@ -1,3 +1,4 @@
+using MapManager;
 using SanayiGUIWebApi.Middlewares;
 using SanayiGUIWebApi.Utilites;
 using System.Net.WebSockets;
@@ -5,10 +6,10 @@ using System.Text;
 using WebSocketManager = SanayiGUIWebApi.Utilites.WebSocketManager;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Configuration.AddJsonFile("appsettings.json");
 // Add services to the container.
-
 builder.Services.AddSingleton<IWebSocketManager,WebSocketManager>();
+builder.Services.AddTransient<RouteManager>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

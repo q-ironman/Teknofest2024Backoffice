@@ -1,0 +1,1328 @@
+[
+    {
+        "Label": "Q1",
+        "Type": "a",
+        "X": 15000.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q2",
+                "Type": "a",
+                "X": 14250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q30",
+                "Type": "a",
+                "X": 16000.0,
+                "Y": 15000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q2",
+        "Type": "a",
+        "X": 14250.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q1",
+                "Type": "a",
+                "X": 15000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q3",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q31",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q3",
+        "Type": "a",
+        "X": 12250.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q2",
+                "Type": "a",
+                "X": 14250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q4",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q31",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q4",
+        "Type": "a",
+        "X": 11625.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q3",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q40",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 15000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q5",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q5",
+        "Type": "a",
+        "X": 9625.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q4",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q40",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 15000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q6",
+                "Type": "a",
+                "X": 9000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q6",
+        "Type": "a",
+        "X": 9000.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q7",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q5",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q7",
+        "Type": "a",
+        "X": 8000.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q8",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q41",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q6",
+                "Type": "a",
+                "X": 9000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q8",
+        "Type": "a",
+        "X": 7000.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q7",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q9",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q9",
+        "Type": "a",
+        "X": 6375.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q8",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q10",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q47",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q10",
+        "Type": "a",
+        "X": 4375.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q9",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q11",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q47",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q11",
+        "Type": "a",
+        "X": 3750.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q10",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q12",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q48",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q12",
+        "Type": "a",
+        "X": 1750.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q11",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q13",
+                "Type": "a",
+                "X": 1000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q48",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q13",
+        "Type": "a",
+        "X": 1000.0,
+        "Y": 12500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q12",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q14",
+                "Type": "a",
+                "X": 0.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q14",
+        "Type": "a",
+        "X": 0.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q15",
+                "Type": "a",
+                "X": 0.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q13",
+                "Type": "a",
+                "X": 1000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q15",
+        "Type": "a",
+        "X": 0.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q16",
+                "Type": "a",
+                "X": 1000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q14",
+                "Type": "a",
+                "X": 0.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q16",
+        "Type": "a",
+        "X": 1000.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q17",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q15",
+                "Type": "a",
+                "X": 0.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q17",
+        "Type": "a",
+        "X": 1750.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q18",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q16",
+                "Type": "a",
+                "X": 1000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q52",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 2000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q18",
+        "Type": "a",
+        "X": 3750.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q19",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q17",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q52",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 2000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q19",
+        "Type": "a",
+        "X": 4375.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q20",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q18",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q43",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q20",
+        "Type": "a",
+        "X": 6375.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q21",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q19",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q43",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q21",
+        "Type": "a",
+        "X": 7000.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q22",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q20",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q22",
+        "Type": "a",
+        "X": 8000.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q23",
+                "Type": "a",
+                "X": 9000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q21",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q42",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q23",
+        "Type": "a",
+        "X": 9000.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q24",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q22",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q24",
+        "Type": "a",
+        "X": 9625.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q25",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q23",
+                "Type": "a",
+                "X": 9000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q36",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q25",
+        "Type": "a",
+        "X": 11625.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q26",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q24",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q36",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q26",
+        "Type": "a",
+        "X": 12250.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q27",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q25",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q35",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q27",
+        "Type": "a",
+        "X": 12250.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q28",
+                "Type": "a",
+                "X": 15000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q26",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q35",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q28",
+        "Type": "a",
+        "X": 15000.0,
+        "Y": 0.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q29",
+                "Type": "a",
+                "X": 16000.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q27",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q29",
+        "Type": "a",
+        "X": 16000.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q30",
+                "Type": "a",
+                "X": 16000.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q28",
+                "Type": "a",
+                "X": 15000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q30",
+        "Type": "a",
+        "X": 16000.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q1",
+                "Type": "a",
+                "X": 15000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q29",
+                "Type": "a",
+                "X": 16000.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q31",
+        "Type": "a",
+        "X": 13250.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q2",
+                "Type": "a",
+                "X": 14250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q3",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q32",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q32",
+        "Type": "a",
+        "X": 13250.0,
+        "Y": 7250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q31",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q33",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q33",
+        "Type": "a",
+        "X": 13250.0,
+        "Y": 6250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q34",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q32",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q34",
+        "Type": "a",
+        "X": 13250.0,
+        "Y": 5250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q35",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q33",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q35",
+        "Type": "a",
+        "X": 13250.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q27",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q34",
+                "Type": "a",
+                "X": 13250.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q26",
+                "Type": "a",
+                "X": 12250.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q36",
+        "Type": "a",
+        "X": 10625.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q24",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q37",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q25",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q37",
+        "Type": "a",
+        "X": 10625.0,
+        "Y": 5250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q38",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q36",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q38",
+        "Type": "a",
+        "X": 10625.0,
+        "Y": 6250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q39",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q37",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q39",
+        "Type": "a",
+        "X": 10625.0,
+        "Y": 7250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q40",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 15000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q38",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q40",
+        "Type": "a",
+        "X": 10625.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q4",
+                "Type": "a",
+                "X": 11625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q39",
+                "Type": "a",
+                "X": 10625.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q5",
+                "Type": "a",
+                "X": 9625.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q41",
+        "Type": "a",
+        "X": 8000.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q7",
+                "Type": "a",
+                "X": 7000.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q42",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q42",
+        "Type": "a",
+        "X": 8000.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q22",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q41",
+                "Type": "a",
+                "X": 8000.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q43",
+        "Type": "a",
+        "X": 5375.0,
+        "Y": 1000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q44",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q19",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q20",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q44",
+        "Type": "a",
+        "X": 5375.0,
+        "Y": 5250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q45",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q43",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 1000.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q45",
+        "Type": "a",
+        "X": 5375.0,
+        "Y": 6250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q46",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q44",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q46",
+        "Type": "a",
+        "X": 5375.0,
+        "Y": 7250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q47",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q45",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q47",
+        "Type": "a",
+        "X": 5375.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q10",
+                "Type": "a",
+                "X": 4375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q46",
+                "Type": "a",
+                "X": 5375.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q9",
+                "Type": "a",
+                "X": 6375.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q48",
+        "Type": "a",
+        "X": 2750.0,
+        "Y": 11500.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q49",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q12",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q11",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 12500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q49",
+        "Type": "a",
+        "X": 2750.0,
+        "Y": 7250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q50",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q48",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 11500.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q50",
+        "Type": "a",
+        "X": 2750.0,
+        "Y": 6250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q51",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q49",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 7250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q51",
+        "Type": "a",
+        "X": 2750.0,
+        "Y": 5250.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q52",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 2000.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q50",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 6250.0,
+                "ConnectedPoints": null
+            }
+        ]
+    },
+    {
+        "Label": "Q52",
+        "Type": "a",
+        "X": 2750.0,
+        "Y": 2000.0,
+        "ConnectedPoints": [
+            {
+                "Label": "Q17",
+                "Type": "a",
+                "X": 1750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q51",
+                "Type": "a",
+                "X": 2750.0,
+                "Y": 5250.0,
+                "ConnectedPoints": null
+            },
+            {
+                "Label": "Q18",
+                "Type": "a",
+                "X": 3750.0,
+                "Y": 0.0,
+                "ConnectedPoints": null
+            }
+        ]
+    }
+]
