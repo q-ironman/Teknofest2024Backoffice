@@ -13,6 +13,7 @@ namespace SanayiGUIBackosffice.Controllers
     public class RobotController : ControllerBase
     {
         IWebSocketManager _webSocketManager;
+        public static List<Point> Points { get; set; } = new List<Point>();
 
         public RobotController(IWebSocketManager webSocketManager)
         {
@@ -68,7 +69,36 @@ namespace SanayiGUIBackosffice.Controllers
         [HttpPost]
         public async Task DrawObstacle(DrawObstacleRequestMessage requestMessage)
         {
+            //for (var i = 5000; i <= 10000; i+=100)
+            //{
+            //    for (int ii = 0; ii < 100; ii++)
+            //    {
+            //        Points.Add(new Point
+            //        {
+            //            X = i+ii,
+            //            Y = i,
+            //        });
+            //    }
 
+            //    requestMessage.Points = Points;
+            //    var uiMessage = new UiDataRequestMessage<DrawObstacleRequestMessage>
+            //    {
+            //        ClassType = nameof(DrawObstacleRequestMessage),
+            //        Data = requestMessage
+            //    };
+            //    var uiMessageJson = JsonSerializer.Serialize(uiMessage);
+            //    await this._webSocketManager.BroadcastMessageAsync(uiMessageJson);
+            //    Thread.Sleep(5);
+            //}
+            Points.AddRange(requestMessage.Points);
+            requestMessage.Points = Points;
+            var uiMessage = new UiDataRequestMessage<DrawObstacleRequestMessage>
+            {
+                ClassType = nameof(DrawObstacleRequestMessage),
+                Data = requestMessage
+            };
+            var uiMessageJson = JsonSerializer.Serialize(uiMessage);
+            await this._webSocketManager.BroadcastMessageAsync(uiMessageJson);
         }
     }
 }
