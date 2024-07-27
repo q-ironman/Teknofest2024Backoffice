@@ -48,11 +48,19 @@ namespace SanayiGUIWebApi.Controllers
         }
 
         [HttpGet]
-        public void MakeEmergencyBrake()
+        public async Task MakeEmergencyBrake()
         {
-
+            var robotUrl = "http://localhost:80/api/MakeEmergencyBrake";
+            var client = new HttpClient();
+            var res = await client.GetAsync(robotUrl);
         }
-
+        [HttpGet]
+        public async Task CancelEmergency()
+        {
+            var robotUrl = "http://localhost:80/api/CancelEmergency";
+            var client = new HttpClient();
+            var res = await client.GetAsync(robotUrl);
+        }
         [HttpPost]
         public async Task EmptyTour(EmptyTourRequestMessage requestMessage)
         {
@@ -62,7 +70,7 @@ namespace SanayiGUIWebApi.Controllers
             }
             var key = $"{requestMessage.StartPoint}{requestMessage.Direction}";
             var routeInfo = EmptyTourRoutes.TryGetValue(key, out var result);
-            var startCommandMessage = new SendStartCommandRequestMessage(new(), new(), result, requestMessage.Direction);
+            var startCommandMessage = new SendStartCommandRequestMessage(new(), new(), result, null);
             var robotUrl = "http://localhost:80/api/EmptyTour";
             var client = new HttpClient();
             var content = new StringContent(JsonSerializer.Serialize(startCommandMessage), Encoding.UTF8, "application/json");
@@ -81,18 +89,12 @@ namespace SanayiGUIWebApi.Controllers
         [HttpPost]
         public async Task ControlPanel(ControlPanelRequestMessage requestMessage)
         {
-            var robotUrl = "http://localhost:80/api/ManualControl";
+            var robotUrl = "http://localhost:80/api/ControlPanel";
             var client = new HttpClient();
             var content = new StringContent(JsonSerializer.Serialize(requestMessage), System.Text.Encoding.UTF8, "application/json");
             var res = await client.PostAsync(robotUrl, content);
         }
-        [HttpGet]
-        public async Task CancelEmergency()
-        {
-            var robotUrl = "http://localhost:80/api/CancelEmergency";
-            var client = new HttpClient();
-            var res = await client.GetAsync(robotUrl);
-        }
+        
 
         [HttpGet]
         public async Task SetManualLift()
