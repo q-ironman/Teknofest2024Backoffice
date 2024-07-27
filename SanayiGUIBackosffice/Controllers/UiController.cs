@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SanayiGUIBackosffice.Messages;
 using SanayiGUIBackosffice.Model;
 using SanayiGUIWebApi.Messages;
+using System.Text;
 using System.Text.Json;
 
 namespace SanayiGUIWebApi.Controllers
@@ -13,12 +14,13 @@ namespace SanayiGUIWebApi.Controllers
     public class UiController : ControllerBase
     {
         private readonly RouteManager routeManager;
+        public record SendStartCommandRequestMessage(List<string> LoadingNode, List<string> UnloadingNode, List<string> Command, string Direction);
         public UiController(RouteManager routeManager)
-        {
+        {                                            
             this.routeManager = routeManager;
         }
         [HttpPost]
-        public List<string> StartCommand(StartCommandRequestMessage requestMessage)
+        public async Task<List<string>> StartCommand(StartCommandRequestMessage requestMessage)
         {
             List<string> shortestPath = new();
             var commandList = requestMessage.Command;
@@ -29,9 +31,14 @@ namespace SanayiGUIWebApi.Controllers
                 var pathPart = routeManager.GetShortestPath(startLabel, endLabel);
                 shortestPath.AddRange(pathPart);
             }
+            var startCommandRequestMessage = new SendStartCommandRequestMessage(requestMessage.LoadingNode, requestMessage.UnloadingNode,shortestPath,requestMessage.Direction) ;
+
+            var robotUrl = "http://localhost:80/api/ManualControl";
+            var client = new HttpClient();
+            var content = new StringContent(JsonSerializer.Serialize(startCommandRequestMessage), Encoding.UTF8, "application/json");
+            var res = await client.PostAsync(robotUrl, content);
+
             return shortestPath;
-            //var res = shortestPath.ToHashSet().ToList();
-            //return res;
         }
 
         [HttpGet]

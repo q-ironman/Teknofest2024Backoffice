@@ -3,6 +3,8 @@
     public class StartCommandRequestMessage
     {
         public string Direction { get; set; }
+        public List<string> LoadingNode { get; set; }
+        public List<string> UnloadingNode { get; set; }
         public List<Command> Command { get; set; }
     }
 
