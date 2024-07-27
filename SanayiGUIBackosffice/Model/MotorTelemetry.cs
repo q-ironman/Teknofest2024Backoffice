@@ -2,7 +2,7 @@
 {
     public class MotorTelemetry
     {
-        public string? Name { get; set; }
-        public int Speed { get; set; }
+        public float Speed { get; set; }
+        public float TotalDistance { get; set; }
     }
 }

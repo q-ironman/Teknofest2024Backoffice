@@ -65,7 +65,16 @@ namespace SanayiGUIBackosffice.Controllers
         {
 
         }
+        [HttpPost]
+        public async Task SendPointCloud(List<Point> requestMessage)
+        {
 
+        }
+        [HttpPost]
+        public async Task RobotStates(RobotStatesRequestMessage requestMessage)
+        {
+
+        }
         [HttpPost]
         public async Task DrawObstacle(DrawObstacleRequestMessage requestMessage)
         {

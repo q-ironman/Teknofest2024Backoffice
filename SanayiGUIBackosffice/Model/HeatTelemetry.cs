@@ -2,8 +2,9 @@
 {
     public class HeatTelemetry
     {
-        public int ArduinoHeat { get; set; }
-        public int RaspberryHeat { get; set; }
+        public float ArduinoHeat { get; set; }
+        public float RaspberryHeat { get; set; }
+        public float JetsonHeat  { get; set; }
 
     }
 }
