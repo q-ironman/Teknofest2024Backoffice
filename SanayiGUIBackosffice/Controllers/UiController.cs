@@ -42,7 +42,13 @@ namespace SanayiGUIWebApi.Controllers
             var robotUrl = "http://localhost:80/api/ManualControl";
             var client = new HttpClient();
             var content = new StringContent(JsonSerializer.Serialize(startCommandRequestMessage), Encoding.UTF8, "application/json");
-            var res = await client.PostAsync(robotUrl, content);
+            try
+            {
+                var res = await client.PostAsync(robotUrl, content);
+            }
+            catch (Exception)
+            {
+            }
 
             return shortestPath;
         }

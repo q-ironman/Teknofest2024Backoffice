@@ -68,12 +68,26 @@ namespace SanayiGUIBackosffice.Controllers
         [HttpPost]
         public async Task SendPointCloud(List<Point> requestMessage)
         {
-
+            Points.AddRange(requestMessage);
+            var uiRequestMessage = new DrawObstacleRequestMessage { Points = Points };
+            var uiMessage = new UiDataRequestMessage<DrawObstacleRequestMessage>
+            {
+                ClassType = nameof(DrawObstacleRequestMessage),
+                Data = uiRequestMessage
+            };
+            var uiMessageJson = JsonSerializer.Serialize(uiMessage);
+            await this._webSocketManager.BroadcastMessageAsync(uiMessageJson);
         }
         [HttpPost]
         public async Task RobotStates(RobotStatesRequestMessage requestMessage)
         {
-
+            var uiMessage = new UiDataRequestMessage<RobotStatesRequestMessage>
+            {
+                ClassType = nameof(RobotStatesRequestMessage),
+                Data = requestMessage
+            };
+            var uiMessageJson = JsonSerializer.Serialize(uiMessage);
+            await this._webSocketManager.BroadcastMessageAsync(uiMessageJson);
         }
         [HttpPost]
         public async Task DrawObstacle(DrawObstacleRequestMessage requestMessage)
